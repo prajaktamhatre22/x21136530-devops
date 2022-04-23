@@ -12,4 +12,3 @@ admin.site.register(Service)
 admin.site.register(Customer)
 admin.site.register(Service_Man)
 admin.site.register(Total_Man)
-

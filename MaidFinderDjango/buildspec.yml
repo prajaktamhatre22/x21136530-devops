@@ -1,7 +1,6 @@
 version: 0.2
 env:
   variables:
-    SONAR_TOKEN: "f24b1e17cf7fc758125f14040a36e330feb03e84"
     key: "value"
 phases:
     install:
@@ -14,14 +13,11 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint $CODEBUILD_SRC_DIR/*.py
-            - pylint $CODEBUILD_SRC_DIR/survey/*.py --rcfile=$CODEBUILD_SRC_DIR/survey/.pylintrc
-            - pylint $CODEBUILD_SRC_DIR/surveyApp/*.py --rcfile=$CODEBUILD_SRC_DIR/survey/.pylintrc
     post_build:
         commands:
             - export mysql_user=''
             - export mysql_password=''
-            - python $CODEBUILD_SRC_DIR/manage.py test
+            
 artifacts:
     files:
         - '**/*'

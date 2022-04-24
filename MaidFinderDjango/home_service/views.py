@@ -12,7 +12,7 @@ def notification():
     new = Service_Man.objects.filter(status=status)
     count = 0
     for i in new:
-        count = 1
+        count += 1
     d = {"count": count, "new": new}
     return d
 
@@ -35,7 +35,7 @@ def Home(request):
         count = 0
         for j in ser1:
             if i.category == j.service_name:
-                count = 1
+                count += 1
         i.total = count
         i.save()
     d = {"error": error, "ser": ser}
@@ -64,11 +64,11 @@ def Admin_Home(request):
     count2 = 0
     count3 = 0
     for i in cus:
-        count1 = 1
+        count1+=1
     for i in ser:
-        count2 = 1
+        count2 += 1
     for i in cat:
-        count3 = 1
+        count3 += 1
     d = {
         "new": dic["new"],
         "count": dic["count"],
@@ -299,7 +299,7 @@ def All_Service(request):
         count = 0
         for j in ser1:
             if i.category == j.service_name:
-                count = 1
+                count += 1
         i.total = count
         i.save()
     d = {"error": error, "ser": ser}
@@ -798,7 +798,7 @@ def Search_Report(request):
     reg1 = Order.objects.filter(status=status)
     total = 0
     for i in reg1:
-        total = 1
+        total += 1
     data = Order.objects.all()
     error = ""
     terror = ""

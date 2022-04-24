@@ -162,7 +162,7 @@ h2, h4{
 								<ul class="nofitications-dropdown">
 
 									<li class="dropdown head-dpdn">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">{{count}}</span></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><em class="fa fa-bell"></em><span class="badge blue">{{count}}</span></a>
 										<ul class="dropdown-menu" style="margin-left:10%">
 											<li>
 												<div class="notification_header">
@@ -200,15 +200,15 @@ h2, h4{
 													<p>{{request.user.username}}</p>
 													<span>Administrator</span>
 												</div>
-												<i class="fa fa-angle-down lnr"></i>
-												<i class="fa fa-angle-up lnr"></i>
+												<em class="fa fa-angle-down lnr"></em>
+												<em class="fa fa-angle-up lnr"></em>
 												<div class="clearfix"></div>	
 											</div>	
 										</a>
 										<ul class="dropdown-menu drp-mnu">
-											<li> <a href="{% url 'admin_change_password' %}"><i class="fa fa-cog"></i> Settings</a> </li>
-											<li> <a href="{% url 'admin_profile' %}"><i class="fa fa-user"></i> Profile</a> </li>
-											<li> <a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Logout</a> </li>
+											<li> <a href="{% url 'admin_change_password' %}"><em class="fa fa-cog"></em> Settings</a> </li>
+											<li> <a href="{% url 'admin_profile' %}"><em class="fa fa-user"></em> Profile</a> </li>
+											<li> <a href="{% url 'logout' %}"><em class="fa fa-sign-out"></em> Logout</a> </li>
 										</ul>
 									</li>
 								</ul>
@@ -256,20 +256,20 @@ h2, h4{
 			  </a> </div>
 		    <div class="menu">
 		      <ul id="menu">
-		        <li id="menu-home"><a href="{% url 'admin_home' %}"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
-		        <li><a href="#"><i class="fa fa-cogs"></i><span>Maid</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		        <li id="menu-home"><a href="{% url 'admin_home' %}"><em class="fa fa-tachometer"></em><span>Dashboard</span></a></li>
+		        <li><a href="#"><em class="fa fa-cogs"></em><span>Maid</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		          <ul>
 		            <li><a href="{% url 'new_service_man' %}">New</a></li>
 		            <li><a href="{% url 'all_service_man' %}">All</a></li>
 		          </ul>
 		        </li>
-		        <li id="menu-comunicacao" ><a href="#"><i class="fa fa-users"></i><span>User</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		        <li id="menu-comunicacao" ><a href="#"><em class="fa fa-users"></em><span>User</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		          <ul id="menu-comunicacao-sub" >
 		            <li id="menu-mensagens" style="width: 120px" ><a href="{% url 'all_customer' %}">All</a>
 		            </li>
 		          </ul>
 		        </li>
-		        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Service</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		        <li id="menu-academico" ><a href="#"><em class="fa fa-file-text"></em><span>Service</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		          <ul id="menu-academico-sub" >
 		          	 <li id="menu-academico-boletim" ><a href="{% url 'add_service' %}">Add Service</a></li>
 		            <li id="menu-academico-avaliacoes" ><a href="{% url 'view_service' %}">View Service</a></li>
@@ -284,14 +284,14 @@ h2, h4{
 		          </ul>
 		        </li>
 
-		        <li><a href="{% url 'admin_order' %}"><i class="fa fa-car"></i><span>View Order</span></a></li>
-		        <li><a href="#"><i class="fa fa-envelope"></i><span>Messages</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		        <li><a href="{% url 'admin_order' %}"><em class="fa fa-car"></em><span>View Order</span></a></li>
+		        <li><a href="#"><em class="fa fa-envelope"></em><span>Messages</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		        	 <ul id="menu-academico-sub">
 			            <li id="menu-academico-avaliacoes" ><a href="{% url 'new_message' %}">Unread</a></li>
 			            <li id="menu-academico-boletim" ><a href="{% url 'read_message' %}">Read</a></li>
 		             </ul>
 		        </li>
-				 <li><a href="{% url 'search_report' %}"><i class="fa fa-search"></i><span>Search Between Date</span></a></li>
+				 <li><a href="{% url 'search_report' %}"><em class="fa fa-search"></em><span>Search Between Date</span></a></li>
 
 
 		      </ul>

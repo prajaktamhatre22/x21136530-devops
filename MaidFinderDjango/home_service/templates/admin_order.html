@@ -35,7 +35,7 @@
                                   <td>{{i.book_date}}</td>
                                   <td>{{i.book_days}}</td>
                                   <td>{{i.book_hours}}</td>
-                                  <td><a href="{% url 'order_detail' i.id %}" ><i  style="color:green;font-size:28px" class="fa fa-eye"></i></a></td>
+                                  <td><a href="{% url 'order_detail' i.id %}" ><em  style="color:green;font-size:28px" class="fa fa-eye"></em></a></td>
                                   <td><span class="label label-danger">{{i.status.status}}</span>
                                   {% ifequal i.status.status 'Accept' %}
                                   <span style="margin-left:5%">----------</span>
@@ -43,7 +43,7 @@
                                   <a href="{% url 'order_status' i.id %}" ><button class="btn btn-primary">Assign_Status</button></a>
                                   {% endifequal %}
                                   </td>
-                                  <td><a href="{% url 'delete_admin_order' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure ?')"><i class="fa fa-trash-o"></i></button></a></td>
+                                  <td><a href="{% url 'delete_admin_order' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure ?')"><em class="fa fa-trash-o"></em></button></a></td>
                               </tr>
                               {% endfor %}
                           </tbody>

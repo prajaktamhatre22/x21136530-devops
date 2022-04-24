@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       {% if request.user.is_staff %}
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="background-color:red" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Hello,{{request.user.username}}
+          <em class="fa fa-user"></em> Hello,{{request.user.username}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
@@ -54,25 +54,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         {% ifequal error "pat" %}
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'user_home' %}">
-           <i class="fa fa-home"></i> Home</a>
+           <em class="fa fa-home"></em> Home</a>
       </li>
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'service' %}">
-           <i class="fa fa-car"></i> Service</a>
+           <em class="fa fa-car"></em> Service</a>
       </li>
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'customer_order' %}">
-           <i class="fa fa-file"></i> My Booking</a>
+           <em class="fa fa-file"></em> My Booking</a>
       </li>
 
       <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'search_cities' %}">
-           <i class="fa fa-search"></i> Search Maid</a>
+           <em class="fa fa-search"></em> Search Maid</a>
       </li>
 
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="background-color:red" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Hello,{{request.user.username}}
+          <em class="fa fa-user"></em> Hello,{{request.user.username}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
@@ -84,15 +84,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         {% else %}
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'service_home' %}" >
-           <i class="fa fa-home"></i> Home</a>
+           <em class="fa fa-home"></em> Home</a>
       </li>
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'service_order' %}">
-            <i class="fa fa-first-order"></i> My Order </a>
+            <em class="fa fa-first-order"></em> My Order </a>
       </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="background-color:red" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Hello,{{request.user.username}}
+          <em class="fa fa-user"></em> Hello,{{request.user.username}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'service_profile' %}" >Profile</a>
@@ -106,31 +106,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         {% else %}
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'home' %}">
-            <i class="fa fa-home" style = "color : black"></i> Home</a>
+            <em class="fa fa-home" style = "color : black"></em> Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style = "color : black" href="{% url 'about' %}">
-            <i class="fa fa-file"></i> About</a>
+            <em class="fa fa-file"></em> About</a>
       </li>
 	  <li class="nav-item">
         <a class="nav-link" style = "color : black" href="{% url 'service' %}">
-            <i class="fa fa-briefcase"></i> Services</a>
+            <em class="fa fa-briefcase"></em> Services</a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link " style = "color : black" href="{% url 'contact' %}">
-            <i class="fa fa-phone"></i> Contact</a>
+            <em class="fa fa-phone"></em> Contact</a>
       </li>
 
         <li class="nav-item ">
         <a class="nav-link" style = "color : black" href="{% url 'search_cities' %}">
-           <i class="fa fa-search"></i> Search Maid</a>
+           <em class="fa fa-search"></em> Search Maid</a>
       </li>
 
 
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="background-color:red" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-sign-in"></i> Login
+          <em class="fa fa-sign-in"></em> Login
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'login' %}">User Login</a>

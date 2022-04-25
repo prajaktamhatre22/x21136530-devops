@@ -34,7 +34,7 @@
                                     {% else %}
                                     <td><span class="label label-danger">{{i.status.status}}</span></td>
                                     {% endifequal %}
-                                  <td><a href="{% url 'service_man_detail' i.id %}" ><button class="btn btn-info"><i class="fa fa-eye"></i></button></a></td>
+                                  <td><a href="{% url 'service_man_detail' i.id %}" ><button class="btn btn-info"><em class="fa fa-eye"></em></button></a></td>
                                   <td><a href="{% url 'delete_service_man' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure ?')"><i class="fa fa-trash-o"></i></button></a></td>
                               </tr>
                               {% endfor %}

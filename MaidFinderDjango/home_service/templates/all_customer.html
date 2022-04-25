@@ -33,7 +33,7 @@
                                   <td>{{i.address}}</td>
 
                                   <td><span class="label label-danger">{{i.status.status}}</span></td>
-                                  <td><center><a href="{% url 'delete_customer' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure ?')"><i class="fa fa-trash-o"></i></button></a></center></td>
+                                  <td><center><a href="{% url 'delete_customer' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure ?')"><em class="fa fa-trash-o"></em></button></a></center></td>
                               </tr>
                               {% endif %}
                               {% endfor %}

@@ -1,0 +1,23 @@
+version: 0.2
+env:
+  variables:
+    key: "value"
+phases:
+    install:
+        runtime-versions:
+            python: 3.7
+        commands:
+            - pip install --upgrade pip
+            # Install dependencies needed for running the static analysis
+            - pip install -r requirements.txt pylint-django pylint pytest
+    pre_build:
+        commands:
+            - python --version
+    post_build:
+        commands:
+            - export mysql_user=''
+            - export mysql_password=''
+            
+artifacts:
+    files:
+        - '**/*'

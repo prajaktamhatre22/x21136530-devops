@@ -61,8 +61,8 @@
                                   <td>{{i.book_days}}</td>
                                   <td>{{i.book_hours}}</td>
                                   <td>{{i.status.status}}</td>
-                                  <td><a href="{% url 'Booking_detail' i.id %}" ><i style="font-size:30px;color:green" class="fa fa-eye"></i></a></td>
-                                  <td><a href="{% url 'delete_Booking' i.id %}" ><i style="font-size:30px;color:red" class="fa fa-times" onclick="return confirm('Are You Confirm?')"></i></a></td>
+                                  <td><a href="{% url 'Booking_detail' i.id %}" ><em style="font-size:30px;color:green" titile="Booking_detail" class="fa fa-eye"></em></a></td>
+                                  <td><a href="{% url 'delete_Booking' i.id %}" ><em style="font-size:30px;color:red" class="fa fa-times" onclick="return confirm('Are You Confirm?')"></></a></td>
                               </tr>
                               {% endfor %}
                           </tbody>
